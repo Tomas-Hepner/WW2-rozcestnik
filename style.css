@@ -4,8 +4,50 @@
     box-sizing: border-box;
 }
 
+body{
+    object-fit: cover;
+}
+
+body h1, h2, p{
+    color: white;
+}
+
 .site{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    background-color: bisque;
-}    
+    background-color: rgb(63, 60, 60);
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main__project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    gap: 80px;
+}
+
+.project__box{
+    width: 400px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.bg0{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMWJkZTU1MmMtZmVkZS00YTk5LTkxZDctMDk0YTYwY2NmNzgyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
