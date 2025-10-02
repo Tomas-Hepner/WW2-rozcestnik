@@ -41,13 +41,218 @@ body h1, h2, p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 10px;
 
 }
 
 .bg0{
-    background-image: url(https://m.media-amazon.com/images/M/MV5BMWJkZTU1MmMtZmVkZS00YTk5LTkxZDctMDk0YTYwY2NmNzgyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+    background-image: url(images/image.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg1{
+    background-image: url(images/hallofcost.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg2{
+    background-image: url(images/produciton.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg3{
+    background-image: url(images/kulisak.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg4{
+    background-image: url(images/chamber.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg5{
+    background-image: url(images/lisak.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg6{
+    background-image: url(images/frankfurt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg7{
+    background-image: url(images/anzio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg8{
+    background-image: url(images/list.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg9{
+    background-image: url(images/jaahosi.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg10{
+    background-image: url(images/vypaleni.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+
+.bg11{
+    background-image: url(images/povstani.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg12{
+    background-image: url(images/kubis_gabcik.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg13{
+    background-image: url(images/stalin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg14{
+    background-image: url(images/moravek.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg15{
+    background-image: url(images/pearlharbor.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg16{
+    background-image: url(images/normandy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg17{
+    background-image: url(images/bubolini.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg18{
+    background-image: url(images/osvetim.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg19{
+    background-image: url(images/terezin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg20{
+    background-image: url(images/haha.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg21{
+    background-image: url(images/ripbozo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg22{
+    background-image: url(images/antrhopoid.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg23{
+    background-image: url(images/winton.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg24{
+    background-image: url(images/irenka.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg25{
+    background-image: url(images/hiroshiggaanihhasaki.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg26{
+    background-image: url(images/churchill.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg27{
+    background-image: url(images/raven.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg28{
+    background-image: url(images/brabors.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+.bg29{
+    background-image: url(images/nevimcosemdat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
 }
