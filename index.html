@@ -1,135 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Druhá světová válka</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
   </head>
   <body>
+
+    <canvas id="smoke-canvas"></canvas>
+
+    <div id="intro" aria-hidden="false">
+      <div class="intro-content">
+        <h1 id="typewriter" aria-live="polite"></h1>
+        <button id="enter-btn" class="hidden">Vstoupit</button>
+      </div>
+    </div>
+
+    <div id="image-overlay" class="hidden">
+      <div class="overlay-content">
+        <span id="close-overlay">&times;</span>
+        <img src="images/overlay.png" alt="Overlay" />
+      </div>
+    </div>
+
     <div class="site">
       <div class="wrapper">
         <div class="main__project">
-          <div class="project__box bg0">
-            <h1>Hirohito</h1>
-            <h2>František Kellner</h2>
-          </div>
-          <div class="project__box bg1">
-            <h1>Holokaust</h1>
-            <h2>Matěj Barborka</h2>
-          </div>
-          <div class="project__box bg2">
-            <h1>Zbrojírenství 2. S. V.</h1>
-            <h2>Jakub Böhm</h2>
-          </div>
-          <div class="project__box bg3">
-            <h1>Rudolf Vrba</h1>
-            <h2>Jan Fiala</h2>
-          </div>
-          <div class="project__box bg4">
-            <h1>Neville Chamberlain</h1>
-            <h2>Václav Dufek</h2>
-          </div>
-          <div class="project__box bg5">
-            <h1>Severo-africká kampaň</h1>
-            <h2>Tomáš Hepner</h2>
-          </div>
-          <div class="project__box bg6">
-            <h1>Anna Franková</h1>
-            <h2>Vojtěch Budka</h2>
-          </div>
-          <div class="project__box bg7">
-            <h1>Vylodění v Itálii</h1>
-            <h2>Jakub Formánek</h2>
-          </div>
-          <div class="project__box bg8">
-            <h1>Oskar Schindler</h1>
-            <h2>Michal Forst</h2>
-          </div>
-          <div class="project__box bg9">
-            <h1>Vznik OSN</h1>
-            <h2>Dykaliuk Julia</h2>
-          </div>
-          <div class="project__box bg10">
-            <h1>Lidice</h1>
-            <h2>Kristýna Pechová</h2>
-          </div>
-          <div class="project__box bg11">
-            <h1>Varšavské povstání</h1>
-            <h2>Halačka David</h2>
-          </div>
-          <div class="project__box bg12">
-            <h1>Jozef Gabčík a Jan Kubiš</h1>
-            <h2>Jan Hrbek</h2>
-          </div>
-          <div class="project__box bg13">
-            <h1>Josef Stalin</h1>
-            <h2>Martin Kocián</h2>
-          </div>
-          <div class="project__box bg14">
-            <h1>Příběh Václava Morávka</h1>
-            <h2>Do Dang Quang</h2>
-          </div>
-          <div class="project__box bg15">
-            <h1>Útok na Pearl Harbor</h1>
-            <h2>Martin Kříž</h2>
-          </div>
-          <div class="project__box bg16">
-            <h1>Vylodění v Normandii</h1>
-            <h2>Filip Strasser</h2>
-          </div>
-          <div class="project__box bg17">
-            <h1>Benito Mussolini</h1>
-            <h2>Matyáš Kokvalinka</h2>
-          </div>
-          <div class="project__box bg18">
-            <h1>Osvětim</h1>
-            <h2>Svatopluk Krejsa</h2>
-          </div>
-          <div class="project__box bg19">
-            <h1>Život dětí v Terezíně</h1>
-            <h2>Aneta Langová</h2>
-          </div>
-          <div class="project__box bg20">
-            <h1>Emil Hácha</h1>
-            <h2>Vojtěch Pytlík</h2>
-          </div>
-          <div class="project__box bg21">
-            <h1>Heydrichiada</h1>
-            <h2>Josef Šindelář</h2>
-          </div>
-          <div class="project__box bg22">
-            <h1>Operace Anthropoid</h1>
-            <h2>Filip Procházka</h2>
-          </div>
-          <div class="project__box bg23">
-            <h1>Nicholas Winton</h1>
-            <h2>Jan Kupeček</h2>
-          </div>
-          <div class="project__box bg24">
-            <h1>Irena Sendlerová</h1>
-            <h2>Tadeáš Válek</h2>
-          </div>
-          <div class="project__box bg25">
-            <h1>Hiroshima a Nagasaki</h1>
-            <h2>Josef Sika</h2>
-          </div>
-          <div class="project__box bg26">
-            <h1>Winston Churchill</h1>
-            <h2>Daniel Volfík</h2>
-          </div>
-          <div class="project__box bg27">
-            <h1>Ravensbrück</h1>
-            <h2>Šimon Pelnář</h2>
-          </div>
-          <div class="project__box bg28">
-            <h1>Operace Barbarossa</h1>
-            <h2>Filip Podhradský</h2>
-          </div>
-          <div class="project__box bg29">
-          </div>
+          <a href="#" class="project__link">
+            <div class="project__box bg0">
+              <h1>Hirohito</h1>
+              <h2>František Kellner</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg1">
+              <h1>Holokaust</h1>
+              <h2>Matěj Barborka</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg2">
+              <h1>Zbrojírenství 2. S. V.</h1>
+              <h2>Jakub Böhm</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg3">
+              <h1>Rudolf Vrba</h1>
+              <h2>Jan Fiala</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg4">
+              <h1>Neville Chamberlain</h1>
+              <h2>Václav Dufek</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg5">
+              <h1>Severo-africká kampaň</h1>
+              <h2>Tomáš Hepner</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg6">
+              <h1>Anna Franková</h1>
+              <h2>Vojtěch Budka</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg7">
+              <h1>Vylodění v Itálii</h1>
+              <h2>Jakub Formánek</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg8">
+              <h1>Oskar Schindler</h1>
+              <h2>Michal Forst</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg9">
+              <h1>Vznik OSN</h1>
+              <h2>Dykaliuk Julia</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg10">
+              <h1>Lidice</h1>
+              <h2>Kristýna Pechová</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg11">
+              <h1>Varšavské povstání</h1>
+              <h2>Halačka David</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg12">
+              <h1>Jozef Gabčík a Jan Kubiš</h1>
+              <h2>Jan Hrbek</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg13">
+              <h1>Josef Stalin</h1>
+              <h2>Martin Kocián</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg14">
+              <h1>Příběh Václava Morávka</h1>
+              <h2>Do Dang Quang</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg15">
+              <h1>Útok na Pearl Harbor</h1>
+              <h2>Martin Kříž</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg16">
+              <h1>Vylodění v Normandii</h1>
+              <h2>Filip Strasser</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg17">
+              <h1>Benito Mussolini</h1>
+              <h2>Matyáš Kokvalinka</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg18">
+              <h1>Osvětim</h1>
+              <h2>Svatopluk Krejsa</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg19">
+              <h1>Život dětí v Terezíně</h1>
+              <h2>Aneta Langová</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg20">
+              <h1>Emil Hácha</h1>
+              <h2>Vojtěch Pytlík</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg21">
+              <h1>Heydrichiada</h1>
+              <h2>Josef Šindelář</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg22">
+              <h1>Operace Anthropoid</h1>
+              <h2>Filip Procházka</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg23">
+              <h1>Nicholas Winton</h1>
+              <h2>Jan Kupeček</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg24">
+              <h1>Irena Sendlerová</h1>
+              <h2>Tadeáš Válek</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg25">
+              <h1>Hiroshima a Nagasaki</h1>
+              <h2>Josef Sika</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg26">
+              <h1>Winston Churchill</h1>
+              <h2>Daniel Volfík</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg27">
+              <h1>Ravensbrück</h1>
+              <h2>Šimon Pelnář</h2>
+            </div>
+          </a>
+          <a href="#" class="project__link">
+            <div class="project__box bg28">
+              <h1>Operace Barbarossa</h1>
+              <h2>Filip Podhradský</h2>
+            </div>
+          </a>
+          <a href="#" id="last-box" class="project__link">
+            <div class="project__box bg29">
+              <h1>uz to konecne funguje dopice</h1>
+            </div>
+          </a>
         </div>
       </div>
     </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/code.js"></script>
+    <script>
+      
+    </script>
   </body>
 </html>
